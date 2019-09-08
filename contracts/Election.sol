@@ -1,14 +1,29 @@
 pragma solidity ^0.5.0;
 
 contract Election {
-  //Store Candidate
-  //Read Candidate
-  string public candidate;
-  //going to get assigned a 'getter function' by Solidity.
-  //candidate is now a function with a getter.  so app.candidate() yields Candidate 1
-  //Constructor
-  function ElectionFunc () public {
-    //state variable
-    candidate = "Candidate 1";
-  }
+    // Model a Candidate
+    struct Candidate {
+        uint id;
+        string name;
+        uint voteCount;
+    }
+
+    // Store Candidates
+    // Fetch Candidate
+    mapping(uint => Candidate) public candidates;
+    // Store Candidates Count
+    uint public candidatesCount;
+
+
+    constructor () public {
+        addCandidate("Candidate 1");
+        addCandidate("Candidate 2");
+    }
+
+    function addCandidate (string memory _name) private {
+        candidatesCount ++;
+        candidates[candidatesCount] = Candidate(candidatesCount, _name, 0);
+    }
+
+
 }
