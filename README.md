@@ -1,5 +1,4 @@
-require('dotenv').config();
-let HDWalletProvider = require("truffle-hdwallet-provider");
+
 
 //https://developers.skalelabs.com for SKALE documentation
 ## Dependencies
