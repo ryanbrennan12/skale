@@ -22,8 +22,8 @@ Open the Ganache GUI client that you downloaded and installed. This will start y
 `$ truffle migrate --reset`
 You must migrate the election smart contract each time your restart ganache.
 
-## Step 5. Configure Metamask (Locally)
-See free video tutorial for full explanation of these steps:
+## Step 5. Configure Metamask (Locally
+
 - Unlock Metamask
 - Connect metamask to your local Ganache blockchain.
 - Import an account provided by ganache.
