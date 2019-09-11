@@ -1,6 +1,4 @@
 
-
-//https://developers.skalelabs.com for SKALE documentation
 ## Dependencies
 
 - NPM: https://nodejs.org
