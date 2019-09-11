@@ -12,7 +12,7 @@
 
 ## Step 2. Install dependencies
 ```
-$ cd election
+$ cd skale
 $ npm install
 ```
 ## Step 3. Start Ganache
